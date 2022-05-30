@@ -1,0 +1,14 @@
+def perfect (x):
+    l=[]
+    sum=0
+    for i in range(1,x):
+        if x%i==0:
+            l.append(i)
+    for i in l:
+        sum +=i
+    if sum == x:
+        print(x,' is a perfect number')
+    else:
+        print(x,' is not a perfect number ')
+x=int(input('enter a number : '))
+perfect(x)
