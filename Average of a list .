@@ -1,0 +1,13 @@
+def avg(l):
+    sum=0
+    for i in l:
+        sum +=i
+    avg=sum/len(l)
+    print('average : ',avg)
+l=[]
+s=int(input('enter the size : '))
+print('enter elements : ')
+for i in range (0,s):
+    e=int(input())
+    l.append(e)
+avg(l)
