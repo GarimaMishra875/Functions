@@ -1,0 +1,14 @@
+def u_c_sc(s):
+    u=0
+    l=0
+    sc=0
+    for i in range(0,len(s)):
+        if s[i]>='A' and s[i]<='Z':
+            u +=1
+        elif s[i]>='a' and s[i]<='z':
+            l +=1
+        else:
+            sc +=1
+    print('Upper case : ',u,'\nLower case : ',l,'\nSpecial Characters : ',sc)
+s=input('enter a string : ')
+u_c_sc(s)
